@@ -125,4 +125,5 @@ Future<void> logOut() async {
     final timeToExpiry = _expiryDate.difference(DateTime.now()).inSeconds;
     _authTimer = Timer(Duration(seconds: timeToExpiry), logOut);
   }
+  
 }
